@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Update ToDo";
+}
+
+<h1>Update ToDo Item</h1>
+@model ToDoList
+
+
+
+<form action="../Home/SaveChanges" method="post">
+    <input type="text" name="ToDoId" value="@Model.ToDoId" hidden />
+    <p>Change description:</p>
+    <br/>
+    <input type="text" name="ToDoDesc" value="@Model.ToDoDesc" placeholder="@Model.ToDoDesc" />
+    <br />
+    <p>Change due date:</p>
+    <br />
+    <input type="datetime" name="ToDoDue" value="@Model.ToDoDue" placeholder="=@Model.ToDoDue" />
+    <br />
+    <p>Mark complete?</p>
+    @if (Model.ToDoComplete == true)
+    {
+        <input type="checkbox" name="ToDoComplete" value="true" checked />
+        <input type="checkbox" name="ToDoComplete" value="false" hidden />
+    }
+    else
+    {
+        <input type="checkbox" name="ToDoComplete" value="true" />
+        <input type="checkbox" name="ToDoComplete" value="false" hidden />
+    }
+    <br />
+    <input type="submit" value="Save Changes!" />
+
+</form>

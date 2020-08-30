@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4C4E190A-E679-4695-88A0-C0EB2B700DB3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/AddTask.cshtml">
+    <Files>
+      <File FileName="Views/Home/ToDoItemList.cshtml" Line="4" Column="13" />
+      <File FileName="Controllers/HomeController.cs" Line="92" Column="53" />
+      <File FileName="Views/Home/UpdateToDo.cshtml" Line="12" Column="88" />
+      <File FileName="Views/Home/AddTask.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="capstone4" expanded="True">
+            <Node name="capstone4" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="AddTask.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.capstone4 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

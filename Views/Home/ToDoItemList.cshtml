@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "ToDo Item List";
+}
+@model List<ToDoList>
+
+<h1>Stuff You Gotta Do</h1>
+
+@foreach (ToDoList thing in Model)
+{
+    <table class="table table-bordered shadow table-hover table-info">
+        <tr class="d-table-row">
+            <td>ToDo Description</td>
+            <td>@thing.ToDoDesc</td>
+        </tr>
+        <tr class="d-table-row">
+            <td>Completion Status</td>
+            @if (thing.ToDoComplete == true)
+            {
+                <td>Complete</td>
+            }
+            else
+            {
+                <td>Not Done Yet</td>
+            }
+
+        </tr>
+        <tr class="d-table-row">
+            <td>Update</td>
+            <td><div class="btn btn-Primary"><a href="../Home/UpdateToDo?id=@thing.ToDoId">Update ToDo Item</a></div></td>
+        </tr>
+        <tr class="d-table-row">
+            <td>Delete</td>
+            <td><div class="btn btn-danger"><a href="../Home/DeleteToDo?id=@thing.ToDoId">Delete ToDo Item</a></div></td>
+        </tr>
+    
+
+    </table>
+}
+
+<div class="btn btn-success"><a href="../Home/AddTask">Add new ToDo</a></div>

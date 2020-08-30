@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Add Task";
+}
+@model ToDoList
+
+<form action="../Home/AddTask" method="post">
+    <input type="text" name="ToDoDesc" placeholder="Describe your ToDo Item" class="form-control mb-4" />
+    <input type="datetime" name="ToDoDue" placeholder="Date Due" />
+    <div class="form-control mb-4">
+        Completed? <input type="checkbox" name="ToDoComplete" value="true" />
+        <input type="checkbox" name="ToDoComplete" value="false" hidden />
+    </div>
+    <input type="submit" value="Add this ToDo" class="form-control mb-4" />"
+
+</form>
